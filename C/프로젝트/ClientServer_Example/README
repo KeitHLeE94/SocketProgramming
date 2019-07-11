@@ -1,0 +1,18 @@
+Compile:
+	gcc client.c -o client
+	gcc server.c -o server
+Execute:
+	./server port_number          		e.g ./server 10000
+	./client server_hostname port_number    e.g ./client 192.168.0.151 10000
+
+Note:
+	Make sure that the port you use is not bound to another Application
+
+In C++:
+	Save files as server.cpp and client.cpp
+	Add the following lines of code:
+		#include <iostream>
+		using namespace std;
+	Compile as:
+		g++ client.c -o client
+		g++ server.c -o server
